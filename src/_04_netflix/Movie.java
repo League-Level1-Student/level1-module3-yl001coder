@@ -57,7 +57,7 @@ public class Movie implements Comparable<Movie> {
 	 * @return The difference between the rating of the other movie and this
 	 */
 	public int compareTo(Movie otherMovie) {
-		int compareQuantity = otherMovie.getRating();
+	 int compareQuantity = otherMovie.getRating();
 
 		// return this.stars - compareQuantity; //ascending order
 		return compareQuantity - this.stars; // descending order
