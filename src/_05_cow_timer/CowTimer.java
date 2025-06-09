@@ -26,7 +26,7 @@ import game_tools.Sound;
  */
 public class CowTimer {
     private int seconds;
-    int milliseconds = 1000;
+    int milliseconds = 1267;
     String music = "moo.wav";
 
     CowTimer() {

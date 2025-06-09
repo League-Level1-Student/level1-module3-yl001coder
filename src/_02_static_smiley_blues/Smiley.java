@@ -11,10 +11,10 @@ public class Smiley extends JLabel {
 	public static final String RED = "red";
 	public static final String GREEN = "green";
 	public static final String BLUE = "blue";
-	public static String color = YELLOW;
+	public static String COLOR = "blue";
 	
 	Smiley(){
-		super(loadIcon("_01_static_smiley_blues/smiley_"+ color +".jpg"));
+		super(loadIcon("_01_static_smiley_blues/smiley_"+ COLOR +".jpg"));
 	}
 	
 	private static Icon loadIcon(String fileName) {
@@ -24,6 +24,6 @@ public class Smiley extends JLabel {
 	}
 	
 	public static void setColor(String newColor) {
-		color = newColor;
+		COLOR = newColor;
 	}
 }
