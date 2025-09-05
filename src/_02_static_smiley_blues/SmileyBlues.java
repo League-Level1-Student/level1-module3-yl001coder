@@ -3,6 +3,9 @@ package _02_static_smiley_blues;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 public class SmileyBlues {
+	JFrame frame = new JFrame();
+	JPanel panel = new JPanel();
+	Smiley smiley = new Smiley();
 	void start() {
 		// 1. Make a new JFrame and set it to be visible
 
@@ -22,16 +25,10 @@ public class SmileyBlues {
 		// 6. Pack your frame
 
 		// 7. RUN THE PROGRAM and make sure you see three blue Smileys!
-		JFrame frame = new JFrame("i am a frame");
+		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		JPanel panel = new JPanel();
 		frame.add(panel);
-		Smiley smiley1 = new Smiley();
-		Smiley smiley2 = new Smiley();
-		Smiley smiley3 = new Smiley();
-		frame.add(smiley1);
-		frame.add(smiley2);
-		frame.add(smiley3);
+		//frame.add(smiley);
 		frame.pack();
 	}
 }
